@@ -1,0 +1,352 @@
+@font-face {
+    font-family: "Avenir Next LT Pro";
+    src: url("fonts/AvenirNextLTPro-Bold.otf");
+}
+body {
+    background-color: #CBF3F0 !important;
+}
+a {
+    color: #FF9F1C !important;
+    text-decoration: none !important;
+}
+
+#makebg {
+    background-color: #2ec4b54f !important;
+}
+
+#makebg ul {
+    list-style: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#makebg li {
+    padding: 3px;
+}
+#navbarToggleExternalContent3 {
+    position: fixed;
+    width: 100%;
+    top: 46px;
+}
+
+.navbar {
+    background-color: #CBF3F0 !important;
+    position: fixed !important;
+    width: 100%;
+    top: 0 !important;
+    z-index: 1 !important;
+}
+.navbar-light .navbar-toggler {
+    color: #2ec4b5 !important;
+    border-color: transparent !important;
+}
+
+h1, h2, a, li, p, #navname {
+    font-family: "Avenir Next LT Pro", sans-serif;
+    color: #FF9F1C;
+}
+
+p {
+    color: #FFBF69;
+    font-size: 1.5em;
+}
+.phone {
+    display: none;
+    transition: all 1s ease-out 0.5s;
+    font-size: 2em;
+}
+
+.title {
+    transition: all 1s ease-out 0.5s;
+    font-size: 3em;
+    color: #2EC4B6;
+}
+
+body {
+    background-color: #CBF3F0;
+    margin: 0px;
+}
+
+#main{
+    background-color: #CBF3F0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#footer {
+    background-color: #2EC4B6;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    color:#CBF3F0;
+}
+
+#footer p {
+    color: #CBF3F0;
+    font-size: 1em;
+}
+
+#nav, #home {
+	margin-left: auto;
+	margin-right: 0;
+	display: flex;
+    flex-direction: row;
+}
+
+#home {
+    width: fit-content;
+    margin: 0px;
+}
+
+#navbar a {
+	text-decoration: none;
+	width: 150px;
+	height: 50px;
+
+	display: block;
+
+	text-align: center;
+	line-height: 50px;
+
+	color: #FF9F1C;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CBF3F0;
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: 0px 1px 1px #2EC4B6; */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar a {
+    font-weight: 800;
+}
+
+#nav > ul {
+    display : flex;
+    align-items: flex-start;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li:hover a {
+    color: #2EC4B6;
+}
+
+.framefade img{
+    width: 600px;
+    height: 480px;
+    object-fit: contain;
+}
+
+.blank {
+    height: 250px;
+}
+
+.half_blank {
+    height: 100px;
+}
+
+.typewriter {
+    width: fit-content;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #homepage {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+#hello_animation {
+    display: none;
+}
+
+#welcome{
+    font-size: 4em;
+    margin: 0px;
+}
+
+#homepage:hover .typewriter #welcome {
+    display: none;
+}
+
+#homepage:hover .typewriter #hello_animation {
+    display: block;
+    height: fit-content;
+    font-size: 4em;
+    font-weight: 700;
+    overflow: hidden;
+    border-right: 0.2em solid #2EC4B6;
+    white-space: nowrap;
+    margin: 0 auto;
+    /* letter-spacing: 0.15em; */
+    animation: typing 4.0s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+#memoji {
+    width: 400px;
+}
+
+#myinfo {
+    display: flex;
+}
+
+#myinfo p {
+    color: #2EC4B6;
+    font-weight: 700;
+}
+
+.touchme p {
+    display: none;
+}
+
+#myinfo .touchme p {
+    display: none;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+
+@keyframes blick-caret {
+    from, to {border-color: transparent}
+    50% {border-color: #2EC4B6}
+}
+
+@keyframes colorchange {
+    0% { background: #FF9F1C}
+    100% { background: #2EC4B6}
+  }
+  
+/*CSS for tablets (medium devices) <= 991px*/
+/* Tablets: 768px - 991px */
+@media (max-width: 991px) {
+	/* body {
+		background-color: pink;
+	} */
+
+    .phone {
+        display: none;
+    }
+
+    #homepage .touchme p {
+        display: block;
+        color: #FFBF69;
+    }
+
+    #myinfo .touchme p {
+        display: block;
+        color: #FF9F1C;
+        font-size: 1em;
+    }
+
+    #myinfo p {
+        font-size: 1.5em;
+    }
+
+    #homepage:hover .touchme p {
+        display: none;
+    }
+
+    #myinfo:hover .touchme p {
+        display: none;
+    }
+}
+
+/*CSS for Mobile Devices (medium devices) <= 767px*/
+@media (max-width: 767px) {
+	/* body {
+		background-color: yellow;
+		padding-top: 0px;
+	} */
+    #homepage:hover .typewriter #hello_animation {
+        display: none;
+    }
+    #homepage:hover .typewriter .phone {
+        display: block;
+    }
+
+    .onebox {
+        width: 300px !important;
+    }
+
+    .slick-slide {
+        width: fit-content;
+    }
+
+    #photomain {
+        width: 300px !important;
+    }
+
+    .framefade img{
+        width: 300px !important;
+        object-fit: contain;
+        margin: 0px;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #myinfo .touchme p {
+        display: block;
+        color: #FFBF69;
+    }
+
+    #homepage .touchme p {
+        display: block;
+        color: #FFBF69;
+    }
+
+    #homepage:hover .touchme p {
+        display: none;
+    }
+
+    #myinfo:hover .touchme p {
+        display: none;
+    }
+
+    #navbar {
+	    position: static;
+    }
+
+    #myinfo {
+        flex-direction: column;
+    }
+        
+    #thirdSec{
+        flex-direction: column;
+    }
+}
+
+/* Medium devices, width ≥ 768px  */
+@media (min-width: 768px) {
+	.navbar {
+        display: none !important;
+    }
+}
+
+/* Large devices, width ≥ 992px  */
+@media (min-width: 992px) {
+    .navbar {
+        display: none !important;
+    }
+}

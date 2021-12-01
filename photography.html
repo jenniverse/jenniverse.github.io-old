@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+	<meta name="description" content="ITP104 Final Project; this is the page containing photos I have taken; photos of foods, travels, and Jenny's dog.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Jenny Kim's Portfolio | Photography</title>
+
+	<link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+				
+
+	<style>
+
+        div .framefade {
+            opacity: 1;
+        }
+
+        #photomain {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            margin: 0px;
+        }
+
+        #sliderbox {
+            width: 500px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .onebox {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            transition: all 1s ease-out 0.5s;
+        }
+
+        .section:hover h2 {
+            font-size: 4em;
+            color: #2EC4B6;
+        }
+
+        .slick-dots li.slick-active button:before {
+            color:#2EC4B6 !important;
+        }
+
+        .slick-dots li button:before {
+            color: #2EC4B6;
+        }
+
+        .slick-prev:before {
+            color: #FF9F1C;
+        }
+        .slick-next:before {
+            color: #FF9F1C;
+        }
+
+	</style>
+
+</head>
+<body>
+	<div id="navbar">
+		<div id="home">
+			<ul>
+				<li>
+					<a href="main_page.html#header" id="logo">Home</a>
+				</li>
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="main_page.html#main" class="active-nav">About Me</a>
+				</li>
+				<li>
+					<a href="photography.html" class="active-nav">Photography</a>
+				</li>
+				<li>
+					<a href="code.html" class="active-nav">Code</a>
+				</li>
+				<li>
+					<a href="resume.html" class="active-nav">Resume</a>
+				</li>
+			</ul>
+		</div> <!-- #nav -->
+	</div> <!-- #navbar -->
+    <nav class="navbar navbar-light">
+		<div class="container-fluid">
+			<div id=navname>Jenny Kim</div>
+		  <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+			data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fas fa-bars">≡</i>
+		  </button>
+		</div>
+	</nav>
+	  	<div class="collapse" id="navbarToggleExternalContent3">
+		<div id="makebg" class="bg-light shadow-3 p-4">
+		  <ul>
+			<li>
+				<a href="main_page.html#homepage">Home</a>
+			</li>
+			<li>
+				<a href="main_page.html#main" class="active-nav">About Me</a>
+			</li>
+			<li>
+				<a href="photography.html" class="active-nav">Photography</a>
+			</li>
+			<li>
+				<a href="code.html" class="active-nav">Code</a>
+			</li>
+			<li>
+				<a href="resume.html" class="active-nav">Resume</a>
+			</li>
+		</ul>
+		</div>
+	  </div>
+
+    <div id="photomain">
+    <div class="section">
+
+        <div class="half_blank"></div>
+
+        <h2>@foodie</h2>
+        <div class="onebox">
+            <div class="framefade">
+                <div><img src="img/yaki.jpeg" alt="Yaki"></div>
+                <div><img src="img/pizza.jpeg" alt="Pizza"></div>
+                <div><img src="img/salad.jpeg" alt="Salad"></div>
+                <div><img src="img/chicken.jpeg" alt="Chicken"></div>
+                <div><img src="img/pho.jpeg" alt="Pho"></div>
+                <div><img src="img/steak.jpeg" alt="Steak"></div>
+            </div><!--.framefade-->
+        </div><!--.onebox-->
+    </div><!--.section-->
+
+    <div class="section">
+
+        <div class="half_blank"></div>
+
+        <h2>@traveler</h2>
+        <div class="onebox">
+            <div class="framefade">
+                <div><img src="img/hawaii.jpeg" alt="Hawaii"></div>
+                <div><img src="img/disney.jpeg" alt="DisneyLand"></div>
+                <div><img src="img/disneyfromtop.jpeg" alt="DisneyLand from the top"></div>
+                <div><img src="img/cherry_blossom.jpeg" alt="Cherry Blossom"></div>
+                <div><img src="img/santa_monica.jpeg" alt="Santa Monica Beach"></div>
+                <div><img src="img/hogwart.jpeg" alt="Hogwart at Universal Studio"></div>
+            </div><!--.framefade-->
+        </div><!--.onebox-->
+
+    </div><!--.section-->
+
+    <div class="section">
+
+        <div class="half_blank"></div>
+
+        <h2>@doggy_lover</h2>
+        <div class="onebox">
+            <div class="framefade">
+                <div><img src="img/ribbon_dog.jpeg" alt="Ribbon Dog"></div>
+                <div><img src="img/blanket.jpeg" alt="Dog with Blanket"></div>
+                <div><img src="img/face.jpeg" alt="Doggy"></div>
+                <div><img src="img/sleepy.jpeg" alt="Sleep Dog"></div>
+                <div><img src="img/dogwfriend.jpeg" alt="Dog with His Friend"></div>
+            </div><!--.framefade-->
+        </div><!--.onebox-->
+
+    </div><!--.section-->
+
+    <div class="half_blank"></div>
+
+    </div><!--#main-->
+	
+
+	<div id="footer">
+	<p>University of Southern California_Jenny Kim</p>
+	</div><!--#footer-->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="mdb.min.js"></script>
+	<script>
+		$('.framefade').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+        });
+	</script>
+
+
+</body>
+
+</html>
